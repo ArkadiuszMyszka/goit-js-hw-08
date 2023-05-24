@@ -35,6 +35,6 @@ galleryCreate();
 let lightbox = new SimpleLightbox(".gallery li a", {
   captionsData: "alt",
   captionPosition: "outside",
-    captionDelay: 250,
+  captionDelay: 250,
   
 });
