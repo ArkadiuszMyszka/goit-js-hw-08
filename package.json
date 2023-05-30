@@ -2,14 +2,14 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/ArkadiuszMyszka/goit-js-hw-08.git",
+  "homepage": "https://github.com/ArkadiuszMyszka/goit-js-hw-08",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08.git/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArkadiuszMyszka/goit-js-hw-08.git"
+    "url": "git+https://github.com/ArkadiuszMyszka/goit-js-hw-08"
   },
   "keywords": [],
   "author": "Arkadiusz Myszka <myszkaaarek@gmail.com>",
@@ -18,6 +18,8 @@
     "url": "https://github.com/ArkadiuszMyszka/goit-js-hw-08.git/issues"
   },
   "dependencies": {
+    "@vimeo/player": "^2.20.1",
+    "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
     "simplelightbox": "^2.14.0"
   },
