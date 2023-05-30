@@ -35,15 +35,14 @@ function saveValue(e) {
     email: email.value,
     message: message.value,
   };
-
+    
   localStorage.setItem('feedback-form-state', JSON.stringify(data));
 }
 
 window.addEventListener('load', () => {
-  const localData = JSON.parse(localStorage.getItem('feedback-form-state'));
-  emailInput.value = localData.email;
-  messageEl.value = localData.message;
+    const localData = JSON.parse(localStorage.getItem('feedback-form-state'));
+    emailInput.value = localData.email;
+    messageEl.value = localData.message;       
 });
-
-fbForm.addEventListener('input', throttle(saveValue, 500));
 fbForm.addEventListener('submit', handleSubmit);
+fbForm.addEventListener('input', throttle(saveValue, 500));
