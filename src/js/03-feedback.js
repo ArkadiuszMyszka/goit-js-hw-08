@@ -29,7 +29,7 @@ function handleSubmit(e) {
 function saveValue(e) {
   e.preventDefault();
   const {
-    elem: { email, message },
+    elements: { email, message },
   } = fbForm;
   const data = {
     email: email.value,
@@ -44,5 +44,6 @@ window.addEventListener('load', () => {
     emailInput.value = localData.email;
     messageEl.value = localData.message;       
 });
-fbForm.addEventListener('submit', handleSubmit);
 fbForm.addEventListener('input', throttle(saveValue, 500));
+fbForm.addEventListener('submit', handleSubmit);
+
